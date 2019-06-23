@@ -1,61 +1,6 @@
-/* =================================================================== 
- *
- *  Stellar v1.0 Main Stylesheet
- *  05-22-2018
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # base style overrides
- *    ## links
- *  # typography & general theme styles
- *    ## Lists
- *    ## responsive video container
- *    ## floated image
- *    ## tables
- *    ## Spacing 
- *    ## pace.js styles - minimal
- *  # preloader
- *  # forms
- *    ## Style Placeholder Text
- *    ## Change Autocomplete styles in Chrome
- *  # buttons
- *  # additional components
- *    ## alert box
- *    ## additional typo styles
- *    ## skillbars
- *  # reusable and common theme styles
- *    ## display headings
- *  # header styles
- *    ## header logo
- *    ## mobile menu toggle
- *    ## navigation
- *  # home
- *    ## home content
- *    ## home video link
- *    ## home scroll
- *    ## home social
- *    ## home animations
- *  # about
- *  # services
- *  # works
- *  # testimonials
- *  # clients
- *  # stats
- *  # contact
- *    ## contact button
- *    ## subscribe
- *  # footer
- *    ## copyright
- *    ## go to top
- *
- *
- * =================================================================== */
-
-
-/* ===================================================================
- * # base style overrides
- *
- * ------------------------------------------------------------------- */
+ .fa-undo{
+   display: none;
+ }
  .faceimage{
   height: 60%;
   width:40%;
@@ -2032,7 +1977,9 @@ input::-moz-focus-inner {
   opacity: .2;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
 }
-
+h1 a{
+  color: white;
+}
 .no-js .s-home {
   background: #000000;
 }
@@ -2201,6 +2148,7 @@ input::-moz-focus-inner {
 .home-social span {
   position: absolute;
   top: 0;
+  
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -2217,10 +2165,10 @@ input::-moz-focus-inner {
 
 .home-social span {
   background-color: #151515;
-  font-size: 1.2rem;
+  font-size: 100%;
   line-height: 30px;
   color: #F26522;
-  right: 50px;
+  right: 100%;
   padding: 0 15px;
   margin: 3px 0;
   opacity: 0;

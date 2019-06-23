@@ -1,31 +1,23 @@
     <!DOCTYPE html>
     <html class="no-js" lang="en">
     <head>
-
-        <!--- basic page needs
-        ================================================== -->
-        <meta charset="utf-8">
         <title>QR Buisness card</title>
+        <meta charset="utf-8">
+        
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <!-- mobile specific metas
-        ================================================== -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- CSS
-        ================================================== -->
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/vendor.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <!-- script
-        ================================================== -->
+
         <script src="js/modernizr.js"></script>
         <script src="js/pace.min.js"></script>
 
-        <!-- favicons
-        ================================================== -->
+
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
         <link rel="icon" href="favicon.png" type="image/x-icon">
 
@@ -33,10 +25,7 @@
 
 
     <body id="top">
-            
-       
-        <!-- preloader
-        ================================================== -->
+             
         <div id="preloader">
             <div id="loader" class="dots-jump">
                 <div></div>
@@ -44,24 +33,23 @@
                 <div></div>
             </div>
         </div>
-        <!-- home
-        ================================================== -->
-        <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+       
+        <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero5.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
             <div class="shadow-overlay"></div>
             
             <div class="home-content">
                 
-                <div class="row home-content__main">
+                 <div class="row home-content__main">
 
                     <h1>
-                    Dmitriev xx Evgeniy
+                    <a href="index.html">Dmitriev xx Evgeniy</a>
                     </h1>
                 </div>
                
                 <div class="faceimage"> 
-                        <img src="/images/faceimage.jpg" class="facelogo"> 
-                        </div>    
+                    <img src="/images/faceimage.jpg" class="facelogo"> 
+                </div>    
             </div> 
             <ul class="home-social">
                 <li>
@@ -79,7 +67,7 @@
                 <li>
                     <a href="#0"><i class="fab fa-viber"></i><span>Viber</span></a>
                 </li>
-            </ul> <!-- end home-social -->
+            </ul>
                 
         </section> <!--<div class="quote row home">
             ащваршшшрваыш     
@@ -91,10 +79,20 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script>
-            
             document.querySelector('.facelogo').onclick=function(){
                 document.querySelector('.faceimage').innerHTML=`<iframe src="https://www.youtube.com/embed/3jT_q7dt-cM" width="100%" height="100%"frameborder="0" allowfullscreen></iframe>`;
-                document.querySelector('.faceimage').className="videotag"
-                 }
+                document.querySelector('.faceimage').className="videotag";
+                document.querySelector('h1').innerHTML+=`<i class="fa fa-undo" aria-hidden="true"></i>`;
+            }
+            document.querySelector('.fa-undo').onclick=function(){
+                document.querySelector('.videotag').innerHTML=`<img src="/images/faceimage.jpg" class="facelogo">`;
+                document.querySelector('.videotag').className="faceimage";
+                document.querySelector('.fa-undo').innerHTML+=`<i class="fa fa-undo" aria-hidden="true"></i>`;
+                }
+            </script>
+        <script>
+            
+       
         </script>
+
     </body>
